@@ -12,11 +12,14 @@ $(document).ready(function() {
         	0:{
             	items:1
         	},
+        	520:{
+        		items:2
+        	},
         	600:{
-            	items:2
+            	items:3
         	},
         	1100:{
-            	items:3
+            	items:4
         	},
         	1240:{
         		items:4
