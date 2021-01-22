@@ -48,33 +48,4 @@ $(document).ready(function() {
 	$('a').click(function(event) {
 		event.preventDefault();
 	});
-	$('.social__wrapper_one').hover(function() {
-		$('.item img[src="img/1photo.png"]').css('filter', 'brightness(75%)');
-		$('.closed_one').css('visibility', 'visible');
-	}, function() {
-		$('.item img').css('filter', 'none');
-		$('.closed_one').css('visibility', 'hidden');
-	});
-	$('.social__wrapper_two').hover(function() {
-		$('.item img[src="img/2photo.png"]').css('filter', 'brightness(75%)');
-		$('.closed_two').css('visibility', 'visible');
-	}, function() {
-		$('.item img').css('filter', 'none');
-		$('.closed_two').css('visibility', 'hidden');
-	});
-	$('.social__wrapper_three').hover(function() {
-		$('.item img[src="img/3photo.png"]').css('filter', 'brightness(75%)');
-		$('.closed_three').css('visibility', 'visible');
-	}, function() {
-		$('.item img').css('filter', 'none');
-		$('.closed_three').css('visibility', 'hidden');
-	});
-	$('.social__wrapper_four').hover(function() {
-		$('.item img[src="img/4photo.png"]').css('filter', 'brightness(75%)');
-		$('.closed_four').css('visibility', 'visible');
-	}, function() {
-		$('.item img').css('filter', 'none');
-		$('.closed_four').css('visibility', 'hidden');
-	});
-
 });

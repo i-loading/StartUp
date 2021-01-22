@@ -234,7 +234,8 @@ nav ul li>a{
 	height: 249.5px;
 	position: absolute;
 	top: 0;
-	left: 0;
+  left: 0;
+  transition: all 0.2s ease;
 }
 .closed__socials {
 	display: -webkit-flex;
@@ -255,10 +256,16 @@ nav ul li>a{
 	line-height: 28px;
 	width: 28px;
 	height: 28px;
-	transition: all 0.2s ease;
+	transition: all 0.1s ease;
 }
 .closed__socials_item a i:hover {
 	background: #c0301c;
+}
+.first-carousel .item:hover .closed__socials {
+  visibility: visible;
+}
+.first-carousel .item:hover .closed__socials_wrapper {
+  background: rgba(0, 0, 0, .2);
 }
 .item h5 {
 	font-weight: normal;
@@ -351,10 +358,17 @@ nav ul li>a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
-.latest_one:hover + .latest__wrapper, .latest__wrapper:hover {
-	visibility: visible;
+.latest__body div a {
+  padding: 12px 20px;
+  display: inline-block;
+  transition: all .2s ease;
+}
+.latest_one:hover + .latest__wrapper, 
+.latest__wrapper:hover {
+	opacity: 1;
 }
 .latest__body h4 {
 	font-size: 18px;
@@ -370,7 +384,6 @@ nav ul li>a{
 .latest__body div{
 	display: inline-block;
 	margin-top: 25px;
-	padding: 12px 20px;
 	font-family: 'Roboto Slab';
 	font-size: 14px;
 	text-transform: uppercase;
@@ -380,7 +393,7 @@ nav ul li>a{
 .latest__body div a, .latest__body div a i {
 	color: #fff;
 }
-.latest__body div:hover {
+.latest__body a:hover {
 	background: #fff;
 	color: #c0301c;
 }
@@ -388,7 +401,7 @@ nav ul li>a{
 	background: #fff;
 	color: #c0301c;
 }
-.latest__body div:hover > a > i {
+.latest__body a:hover > i {
 	background: #fff;
 	color: #c0301c;
 }
@@ -560,15 +573,15 @@ nav ul li>a{
 }
 .info-form form .area {
 	margin-left: 25px;
-	width: 725px;
+  width: 725px;
+  box-sizing: border-box;
 	height: 150px;
 	resize: none;
 	display: block;
+  padding-left: 16px;
+  padding-top: 40px;
+  padding: 50px 16px 0;
 } 
-.info-form form textarea::placeholder {
-	line-height: 125px;
-	padding-left: 16px;
-}
 .info-form form input, textarea {
 	border: 1px solid #000;
 }
