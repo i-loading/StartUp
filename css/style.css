@@ -678,7 +678,7 @@ footer p {
 		flex-direction: column;
 	}
 	.newWork img {
-		width: 70%;
+		width: 90%;
 		padding: 0;
 		margin: 0 auto;
 	}
@@ -707,6 +707,15 @@ footer p {
 }
 
 @media screen and (max-width: 680px) {
+  .latest {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+  }
+  .latest img {
+		min-width: 90%;
+		display: block;
+	}
 	.ads {
 		flex-direction: column;
 		padding: 50px 0 40px 0;
@@ -749,15 +758,6 @@ footer p {
 	.titles h1 {
 		padding-top: 150px;
 	}
-	.latest {
-		flex-direction: column;
-		width: 100%;
-		align-items: center;
-	}
-	.latest img {
-		min-width: 90%;
-		display: block;
-	}
 	.owl-carousel .owl-nav button.owl-prev,
 	.owl-carousel .owl-nav button.owl-next {
 		display: none;
@@ -776,7 +776,16 @@ footer p {
 	}
 	form {
 		width: 100%;
-	}
+  }
+  .info-form form input {
+    margin-left: 0;
+  }
+  .info-form form .area {
+    margin-left: 0;
+  }
+  form .sub {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 410px) {
 	.thirdSection ul {
@@ -787,7 +796,17 @@ footer p {
 	}
 	.thirdSection ul li {
 		margin-bottom: 15px;
-	}
+  }
+  .newDesc .newDesc__inner {
+    flex-direction: column;
+  }
+  .newDesc__wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .newDesc .date {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 350px) {
